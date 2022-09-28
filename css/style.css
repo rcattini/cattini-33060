@@ -1,3 +1,4 @@
+/* RAFAEL CATTINI - DESARROLLO WEB CODER - CAMADA 33060 */ 
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +20,7 @@
   color: white;
   background-color: #191970;
 }
+/*Comienzo Header gral*/
 .cuerpo__cabeza {
   background-color: #8d0000;
   padding: 30px;
@@ -45,6 +47,7 @@
   text-decoration: none;
   margin: 10px;
 }
+/*Fin Header gral*/
 /*Comienzo Footer gral*/
 
 .cuerpo__pie {
@@ -71,6 +74,7 @@
 }
 
 /*Final Footer gral*/
+/*Comienzo Main INDEX*/
 .cuerpo__torso__index__efecto {
   display: flex;
   justify-content: center;
@@ -81,8 +85,6 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-duration: 10s;
-
-
 }
 @keyframes un_efecto {
   0%, 100% {transform: translate(-10px, -10px)}
@@ -140,6 +142,7 @@
   display: flex;
   justify-content: center;
 }
+/*Fin Main INDEX*/
 
 /* Inicio cuerpo biografia*/
 .cuerpo__torso__bio__historia {
@@ -162,6 +165,7 @@
   transform: translate(100px, -150px);
 }
 /* Fin cuerpo biografia */
+
 /* Inicio cuerpo galeria*/
 .cuerpo__torso__galeria__carruseles {
   margin: 50px 15px 30px;
@@ -176,9 +180,10 @@
 .cuerpo__torso__contacto {
   margin: 10px 20px;
 }
-/* Inicio cuerpo contacto*/
+/* Fin cuerpo contacto*/
 
 @media only screen and (min-width: 768px) {
+  /*Comienzo main INDEX*/
   .cuerpo__cabeza__logo img {
     width: 130px;
     transform: translate(0)
@@ -198,15 +203,12 @@
     animation-duration: 10s;
     width: 300px;
     
-  
-  
   }
   @keyframes un_efecto {
     0%, 100% {transform: translate(-10px, -10px)}
     25%{transform: translate(10px, -10px)}
     50%{transform: translate(10px, 10px)}
-    75%{transform: translate(-10px, 10px)}
-    
+    75%{transform: translate(-10px, 10px)}  
   }
   .cuerpo__torso__index__minibio {
     border-top-left-radius: 40px;
@@ -216,15 +218,15 @@
   .cuerpo__torso__index__minibio h1 {
     padding: 40px;
   }
-
   .cuerpo__torso__index__minibio p {
     padding: 40px;
   }
-
   .cuerpo__torso__index__minigaleri__carrusel {
     margin: 100px 100px 10px 100px;
     padding: 10px 100px 10px 100px;
   }
+  /*Fin Main INDEX*/
+
   /* Inicio cuerpo biografia*/
   .cuerpo__torso__bio__historia {
     padding: 50px 100px 50px;
@@ -245,8 +247,8 @@
     transform: translate(600px,0px);
   }
   /* Fin cuerpo biografia */
-  /* Inicio cuerpo galeria*/
 
+  /* Inicio cuerpo galeria*/
   .cuerpo__torso__galeria__carruseles {
     margin: 50px 100px 10px 100px;
     padding: 10px 100px 10px 100px;
@@ -256,6 +258,7 @@
     height: 400px;
   }
   /* Fin cuerpo galeria*/
+
   /* Inicio cuerpo contacto*/
   .cuerpo__torso__contacto {
     margin: 100px 200px;
