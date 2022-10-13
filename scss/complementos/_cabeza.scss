@@ -1,0 +1,30 @@
+.cuerpo__cabeza {
+  padding: 30px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 100vw;
+  &__logo img {
+    width: 4.688rem;
+    position: fixed;
+    transform: translate(0, -3px);
+  }
+  &__menu ul li:hover {
+    background-color: #191970;
+    border-radius: 10px;
+  }
+  &__menu ul li {
+    text-align: end;
+  }
+  &__menu ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cuerpo__cabeza__logo img {
+    width: 8.125rem;
+    transform: translate(0, -38px);
+  }
+}

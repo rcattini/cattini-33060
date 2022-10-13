@@ -1,0 +1,25 @@
+/* Inicio cuerpo galeria*/
+main h1 {
+  text-align: center;
+}
+.cuerpo__torso__galeria__carruseles {
+  margin: 50px 15px 30px;
+}
+.cuerpo__torso__galeria__video {
+  display: flex;
+  justify-content: center;
+}
+/* Fin cuerpo galeria*/
+@media only screen and (min-width: 768px) {
+  /* Inicio cuerpo galeria*/
+
+  .cuerpo__torso__galeria__carruseles {
+    margin: 50px 200px 10px 200px;
+    padding: 10px 100px 10px 100px;
+  }
+  .cuerpo__torso__galeria__video article iframe {
+    width: 600px;
+    height: 400px;
+  }
+  /* Fin cuerpo galeria*/
+}

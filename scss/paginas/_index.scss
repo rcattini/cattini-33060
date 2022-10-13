@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "kyiv";
+  src: url("../font/KyivTypeSans-Regular.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "explore";
+  src: url("../font/Explore.ttf");
+}
+.cuerpo {
+  color: white;
+}
+
+.cuerpo__torso__index__efecto {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 200px;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+  }
+}
+
+@keyframes un_efecto {
+  0%,
+  100% {
+    transform: translate(-10px, -10px);
+  }
+  25% {
+    transform: translate(10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+  75% {
+    transform: translate(-10px, 10px);
+  }
+}
+.cuerpo__torso__index__portada img {
+  width: 100vw;
+}
+.cuerpo__torso__index__minibio {
+  @extend .sombra;
+  display: grid;
+  grid-template-areas:
+    "titulo info"
+    "boton info";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 5px;
+  align-items: center;
+  justify-items: center;
+  background-color: #1e0c06;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin: 20px 0 10px 30px;
+  p {
+    grid-area: info;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+  }
+}
+
+.boton {
+  background-color: #8d0000;
+  border: solid 2px;
+  border-radius: 10px;
+  margin: 40px;
+  padding: 10px;
+  a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  &:hover {
+    background-color: #191970;
+    border-radius: 10px;
+  }
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .cuerpo__cabeza__logo img {
+    width: 8.125rem;
+    transform: translate(0, -35px);
+  }
+  .cuerpo__torso__index__2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cuerpo__torso__index__efecto {
+    display: flex;
+    justify-content: center;
+  }
+  .cuerpo__torso__index__efecto img {
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    width: 300px;
+  }
+  @keyframes un_efecto {
+    0%,
+    100% {
+      transform: translate(-10px, -10px);
+    }
+    25% {
+      transform: translate(10px, -10px);
+    }
+    50% {
+      transform: translate(10px, 10px);
+    }
+    75% {
+      transform: translate(-10px, 10px);
+    }
+  }
+  .cuerpo__torso__index__minibio {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin: 20px 0px 20px 0px;
+  }
+
+  .cuerpo__torso__index__minigaleri__carrusel {
+    margin: 100px 200px 10px 200px;
+    padding: 10px 100px 10px 100px;
+  }
+  .audio {
+    display: flex;
+    justify-content: center;
+  }
+}

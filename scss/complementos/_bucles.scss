@@ -1,0 +1,7 @@
+@media only screen and (min-width: 768px) {
+  @for $varpad from 1 through 10 {
+    .padding-#{$varpad} {
+      padding: 1rem * $varpad;
+    }
+  }
+}

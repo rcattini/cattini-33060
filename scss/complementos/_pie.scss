@@ -1,0 +1,31 @@
+/*Comienzo Footer gral*/
+
+.cuerpo__pie {
+  background-color: #222021;
+  font-family: inherit;
+  display: flex;
+  justify-content: space-between;
+  &__texto {
+    margin: 30px;
+    display: inline-block;
+  }
+  &__redes {
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    align-items: center;
+
+    ul {
+      margin: 0%;
+      padding: 0%;
+      li {
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+/*Final Footer gral*/
