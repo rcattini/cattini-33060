@@ -1,25 +1,64 @@
 /* Inicio cuerpo galeria*/
-main h1 {
-  text-align: center;
+main {
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
 }
+
+#galeria .col-lg-3 {
+  padding: 1rem;
+}
+#galeria img {
+  width: 100%;
+  height: 100%;
+  &:hover {
+    border: 5px solid #191970;
+    width: 100%;
+  }
+}
+.img-hor {
+  padding: 5rem 0 5rem 0;
+}
+.videoluis {
+  width: 100%;
+
+  &:hover {
+    border: 5px solid #191970;
+    width: 100%;
+  }
+}
+
 .cuerpo__torso__galeria__carruseles {
   margin: 50px 15px 30px;
 }
 .cuerpo__torso__galeria__video {
   display: flex;
   justify-content: center;
+  padding: 1rem;
+}
+.galerianacional {
+  margin: 1rem;
 }
 /* Fin cuerpo galeria*/
 @media only screen and (min-width: 768px) {
-  /* Inicio cuerpo galeria*/
+  /* Inicio cuerpo LG galeria*/
 
   .cuerpo__torso__galeria__carruseles {
     margin: 50px 200px 10px 200px;
     padding: 10px 100px 10px 100px;
   }
+  .galerianacional {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    align-items: center;
+  }
   .cuerpo__torso__galeria__video article iframe {
     width: 600px;
     height: 400px;
   }
-  /* Fin cuerpo galeria*/
+  /* Fin cuerpo LG galeria*/
 }

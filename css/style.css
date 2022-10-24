@@ -8391,6 +8391,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+/* Receteo*/
 * {
   margin: 0;
   padding: 0; }
@@ -8405,9 +8406,26 @@ textarea.form-control-lg {
   font-family: "explore";
   src: url("../font/Explore.ttf"); }
 
+/* Comienzo main principal*/
+#cuerpe {
+  background: url(../img/luis-portada.jpeg);
+  background-size: 100vw;
+  background-repeat: no-repeat; }
+
 .cuerpo {
   color: white; }
 
+.cuerpo__torso__index__portada {
+  display: flex;
+  justify-content: center;
+  padding-top: 9rem; }
+  .cuerpo__torso__index__portada img {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -3rem); }
+
+/* animacion*/
 .cuerpo__torso__index__efecto {
   display: flex;
   justify-content: center; }
@@ -8429,8 +8447,8 @@ textarea.form-control-lg {
   75% {
     transform: translate(-10px, 10px); } }
 
-.cuerpo__torso__index__portada img {
-  width: 100vw; }
+.cuerpo__torso__index__2 {
+  padding-top: 1rem; }
 
 .cuerpo__torso__index__minibio {
   display: grid;
@@ -8471,11 +8489,22 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center; }
 
+.audio {
+  display: flex;
+  justify-content: center;
+  padding: 2rem; }
+
+/* Fin main principal*/
+/* Comienzo LG main principal*/
 @media only screen and (min-width: 768px) {
+  .cuerpo__torso__index__portada img {
+    width: 15rem;
+    transform: translate(-10rem, -3rem); }
   .cuerpo__cabeza__logo img {
     width: 8.125rem;
     transform: translate(0, -35px); }
   .cuerpo__torso__index__2 {
+    padding-top: 20rem;
     display: flex;
     justify-content: space-between; }
   .cuerpo__torso__index__efecto {
@@ -8503,14 +8532,12 @@ textarea.form-control-lg {
     margin: 20px 0px 20px 0px; }
   .cuerpo__torso__index__minigaleri__carrusel {
     margin: 100px 200px 10px 200px;
-    padding: 10px 100px 10px 100px; }
-  .audio {
-    display: flex;
-    justify-content: center; } }
+    padding: 10px 100px 10px 100px; } }
 
+/* Fin main LG principal*/
 /* Inicio cuerpo biografia*/
 .cuerpo__torso__bio__historia {
-  padding: 50px 15px 200px;
+  padding: 4rem 1rem 2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -8518,19 +8545,20 @@ textarea.form-control-lg {
 
 .foto1 {
   width: 35%;
-  transform: translate(50px, -200px); }
+  transform: translate(50px, 0); }
 
 .foto2 {
   width: 60%;
-  transform: translate(10px, -100px); }
+  transform: translate(10px, 50px); }
 
 .foto3 {
   width: 60%;
-  transform: translate(100px, -150px); }
+  transform: translate(100px, 0);
+  padding-bottom: 10px; }
 
 /* Fin cuerpo biografia */
 @media only screen and (min-width: 768px) {
-  /* Inicio cuerpo biografia*/
+  /* Inicio cuerpo LG biografia*/
   .cuerpo__torso__bio__historia {
     padding: 50px 100px 50px; }
   .cuerpo__torso__bio__fotos {
@@ -8543,50 +8571,83 @@ textarea.form-control-lg {
     transform: translate(-25px, 200px); }
   .foto3 {
     width: 40%;
-    transform: translate(600px, 0px); }
-  /* Fin cuerpo biografia */ }
+    transform: translate(30rem, 0px); }
+  /* Fin cuerpo LG biografia */ }
 
 /* Inicio cuerpo contacto*/
 .cuerpo__torso__contacto {
-  margin: 10px 20px; }
+  padding: 10px 20px; }
 
 /* Inicio cuerpo contacto*/
 @media only screen and (min-width: 768px) {
-  /* Inicio cuerpo contacto*/
+  /* Inicio cuerpo LG contacto*/
   .cuerpo__torso__contacto {
-    margin: 100px 200px; }
-  /* Inicio cuerpo contacto*/ }
+    padding: 100px 200px; }
+  /* Inicio cuerpo LG contacto*/ }
 
 /* Inicio cuerpo galeria*/
 main h1, main .h1 {
   text-align: center; }
+
+main h2, main .h2 {
+  text-align: center; }
+
+#galeria .col-lg-3 {
+  padding: 1rem; }
+
+#galeria img {
+  width: 100%;
+  height: 100%; }
+  #galeria img:hover {
+    border: 5px solid #191970;
+    width: 100%; }
+
+.img-hor {
+  padding: 5rem 0 5rem 0; }
+
+.videoluis {
+  width: 100%; }
+  .videoluis:hover {
+    border: 5px solid #191970;
+    width: 100%; }
 
 .cuerpo__torso__galeria__carruseles {
   margin: 50px 15px 30px; }
 
 .cuerpo__torso__galeria__video {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 1rem; }
+
+.galerianacional {
+  margin: 1rem; }
 
 /* Fin cuerpo galeria*/
 @media only screen and (min-width: 768px) {
-  /* Inicio cuerpo galeria*/
+  /* Inicio cuerpo LG galeria*/
   .cuerpo__torso__galeria__carruseles {
     margin: 50px 200px 10px 200px;
     padding: 10px 100px 10px 100px; }
+  .galerianacional {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    align-items: center; }
   .cuerpo__torso__galeria__video article iframe {
     width: 600px;
     height: 400px; }
-  /* Fin cuerpo galeria*/ }
+  /* Fin cuerpo LG galeria*/ }
 
+/* Comienzo main principal*/
 main h1, main .h1 {
   text-align: center;
-  margin: 2rem 0; }
+  padding-top: 4rem; }
 
 .tarjeta {
   display: flex;
   justify-content: center; }
 
+/* Fin main principal*/
 @media only screen and (min-width: 768px) {
   .padding-1 {
     padding: 1rem; }
@@ -8633,26 +8694,36 @@ main h1, main .h1 {
         margin: 10px; }
 
 /*Final Footer gral*/
+/*Comienzo Header gral*/
 .cuerpo__cabeza {
-  padding: 30px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  width: 100vw; }
-  .cuerpo__cabeza__logo img {
-    width: 4.688rem;
-    position: fixed;
-    transform: translate(0, -3px); }
+  z-index: 1;
+  background: #8d0000;
+  background: radial-gradient(circle, rgba(141, 0, 0, 0) 33%, #8d0000 61%);
+  border-radius: 0 0 0 1rem;
+  padding: 0 1rem;
+  width: 100vw;
+  position: fixed; }
+  .cuerpo__cabeza__logo {
+    height: 5px; }
+  .cuerpo__cabeza img {
+    width: 3rem;
+    transform: translate(0, -10px); }
   .cuerpo__cabeza__menu ul li:hover {
-    background-color: #191970;
-    border-radius: 10px; }
+    background-color: rgba(25, 25, 112, 0.5);
+    border-radius: 1rem; }
+    .cuerpo__cabeza__menu ul li:hover a:hover {
+      color: white; }
   .cuerpo__cabeza__menu ul li {
     text-align: end; }
   .cuerpo__cabeza__menu ul li a {
-    color: white;
-    text-decoration: none;
-    margin: 10px; }
+    color: #f0f0f0;
+    margin: 4px; }
 
 @media only screen and (min-width: 768px) {
-  .cuerpo__cabeza__logo img {
-    width: 8.125rem;
-    transform: translate(0, -38px); } }
+  .cuerpo__cabeza__logo {
+    height: 5px; }
+    .cuerpo__cabeza__logo img {
+      width: 5rem;
+      transform: translate(0, -2rem); } }
+
+/*Comienzo Header gral*/

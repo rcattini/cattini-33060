@@ -18,8 +18,10 @@
     <!--Comienzo header-->
     <header class="cuerpo__cabeza bg-secondary">
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand cuerpo__cabeza__logo" href="./index.html"
+        <div class="container-fluid p-0">
+          <a
+            class="navbar-brand opacity-100 cuerpo__cabeza__logo"
+            href="./index.html"
             ><img src="./img/luis-suarez-logo.png" alt="logo" width="150px"
           /></a>
           <button
@@ -39,15 +41,19 @@
           >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./biografia.html"
-                  >Biografia</a
-                >
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./biografia.html">Biografia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./galeria.html">Galeria</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./merchandising.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./merchandising.html"
                   >Merchandising</a
                 >
               </li>
@@ -60,21 +66,62 @@
       </nav>
     </header>
     <!--Fin header-->
-    <!--Comienzo main, coloque tarjetas para la venta de camisetas-->
+    <!--Comienzo main, coloque tarjetas para la venta de camisetas, utilizando carruseles para mejor visualizaciones, aplicando grid-->
     <main>
-      <h1>VENTA DE CAMISETAS</h1>
       <div class="cuerpo__torso__merchandising">
+        <h1>VENTA DE CAMISETAS</h1>
         <section>
           <div class="conteiner">
             <div class="row vw-100">
               <div class="col-lg-4">
                 <div class="row-lg-6 tarjeta">
                   <div class="card m-2 text-center" style="width: 18rem">
-                    <img
-                      src="./img/camis/uru.png"
-                      class="card-img-top"
-                      alt="camiseta-uru"
-                    />
+                    <div
+                      id="carouselExampleControls1"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/camisetas/urua.jpg"
+                            class="d-block w-100 h-100"
+                            alt="urua"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/camisetas/urub.jpg"
+                            class="d-block w-100 h-100"
+                            alt="urub"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls1"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls1"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title text-primary">
                         Camiseta de Uruguay
@@ -85,11 +132,52 @@
                 </div>
                 <div class="row-lg-6 tarjeta">
                   <div class="card m-2 text-center" style="width: 18rem">
-                    <img
-                      src="./img/camis/nac.png"
-                      class="card-img-top"
-                      alt="camiseta-nac"
-                    />
+                    <div
+                      id="carouselExampleControls2"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/camisetas/naca.jpg"
+                            class="d-block w-100"
+                            alt="naca"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/camisetas/nacb.jpg"
+                            class="d-block w-100"
+                            alt="nacb"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls2"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls2"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title text-primary">
                         Camiseta de Nacional
@@ -102,11 +190,52 @@
               <div class="col-lg-4">
                 <div class="row-lg-6 tarjeta">
                   <div class="card m-2 text-center" style="width: 18rem">
-                    <img
-                      src="./img/camis/bar.png"
-                      class="card-img-top"
-                      alt="camiseta-bar"
-                    />
+                    <div
+                      id="carouselExampleControls3"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/camisetas/bara.jpg"
+                            class="d-block w-100"
+                            alt="bara"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/camisetas/barb.jpg"
+                            class="d-block w-100"
+                            alt="barb"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls3"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls3"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title text-primary">
                         Camiseta de Barcelona
@@ -117,11 +246,52 @@
                 </div>
                 <div class="row-lg-6 tarjeta">
                   <div class="card m-2 text-center" style="width: 18rem">
-                    <img
-                      src="./img/camis/atm.png"
-                      class="card-img-top"
-                      alt="camiseta-atm"
-                    />
+                    <div
+                      id="carouselExampleControls4"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/camisetas/atma.jpg"
+                            class="d-block w-100"
+                            alt="atma"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/camisetas/atmb.jpg"
+                            class="d-block w-100"
+                            alt="atmb"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls4"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls4"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title text-primary">
                         Camiceta de Atletico M.
@@ -134,11 +304,52 @@
               <div class="col-lg-4">
                 <div class="row-lg-6 tarjeta">
                   <div class="card m-2 text-center" style="width: 18rem">
-                    <img
-                      src="./img/camis/liv.png"
-                      class="card-img-top"
-                      alt="camiseta-liv"
-                    />
+                    <div
+                      id="carouselExampleControls5"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/camisetas/liva.jpg"
+                            class="d-block w-100"
+                            alt="liva"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/camisetas/livb.jpg"
+                            class="d-block w-100"
+                            alt="livb"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls5"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls5"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title text-primary">
                         Camiceta de Liverpool
@@ -149,11 +360,52 @@
                 </div>
                 <div class="row-lg-6 tarjeta">
                   <div class="card m-2 text-center" style="width: 18rem">
-                    <img
-                      src="./img/camis/ajax.png"
-                      class="card-img-top"
-                      alt="camiseta-ajax"
-                    />
+                    <div
+                      id="carouselExampleControls6"
+                      class="carousel slide"
+                      data-bs-ride="carousel"
+                    >
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img
+                            src="./img/camisetas/ajaa.jpg"
+                            class="d-block w-100"
+                            alt="ajaa"
+                          />
+                        </div>
+                        <div class="carousel-item">
+                          <img
+                            src="./img/camisetas/ajab.jpg"
+                            class="d-block w-100"
+                            alt="ajab"
+                          />
+                        </div>
+                      </div>
+                      <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls6"
+                        data-bs-slide="prev"
+                      >
+                        <span
+                          class="carousel-control-prev-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls6"
+                        data-bs-slide="next"
+                      >
+                        <span
+                          class="carousel-control-next-icon"
+                          aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
                     <div class="card-body">
                       <h5 class="card-title text-primary">Camiceta de Ajax</h5>
                       <a href="#" class="btn btn-primary">Comprar</a>

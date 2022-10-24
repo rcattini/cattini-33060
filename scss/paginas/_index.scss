@@ -1,7 +1,10 @@
+/* Receteo*/
 * {
   margin: 0;
   padding: 0;
 }
+
+
 @font-face {
   font-family: "kyiv";
   src: url("../font/KyivTypeSans-Regular.ttf");
@@ -13,10 +16,28 @@
   font-family: "explore";
   src: url("../font/Explore.ttf");
 }
+/* Comienzo main principal*/
+#cuerpe {
+  background: url(../img/luis-portada.jpeg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
 .cuerpo {
   color: white;
 }
 
+.cuerpo__torso__index__portada {
+  display: flex;
+  justify-content: center;
+  padding-top: 9rem;
+  & img {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -3rem);
+  }
+}
+/* animacion*/
 .cuerpo__torso__index__efecto {
   display: flex;
   justify-content: center;
@@ -44,9 +65,11 @@
     transform: translate(-10px, 10px);
   }
 }
-.cuerpo__torso__index__portada img {
-  width: 100vw;
+
+.cuerpo__torso__index__2 {
+  padding-top: 1rem;
 }
+
 .cuerpo__torso__index__minibio {
   @extend .sombra;
   display: grid;
@@ -94,13 +117,26 @@
   display: flex;
   justify-content: center;
 }
+.audio {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+/* Fin main principal*/
 
+/* Comienzo LG main principal*/
 @media only screen and (min-width: 768px) {
+  .cuerpo__torso__index__portada img {
+    width: 15rem;
+    transform: translate(-10rem, -3rem);
+  }
+
   .cuerpo__cabeza__logo img {
     width: 8.125rem;
     transform: translate(0, -35px);
   }
   .cuerpo__torso__index__2 {
+    padding-top: 20rem;
     display: flex;
     justify-content: space-between;
   }
@@ -140,8 +176,5 @@
     margin: 100px 200px 10px 200px;
     padding: 10px 100px 10px 100px;
   }
-  .audio {
-    display: flex;
-    justify-content: center;
-  }
 }
+/* Fin main LG principal*/

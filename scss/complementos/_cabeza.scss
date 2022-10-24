@@ -1,30 +1,48 @@
+/*Comienzo Header gral*/
+
 .cuerpo__cabeza {
-  padding: 30px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  z-index: 1;
+  background: rgb(141, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(141, 0, 0, 0) 33%,
+    rgba(141, 0, 0, 1) 61%
+  );
+  border-radius: 0 0 0 1rem;
+  padding: 0 1rem;
   width: 100vw;
-  &__logo img {
-    width: 4.688rem;
-    position: fixed;
-    transform: translate(0, -3px);
+  position: fixed;
+
+  &__logo {
+    height: 5px;
+  }
+  img {
+    width: 3rem;
+    transform: translate(0, -10px);
   }
   &__menu ul li:hover {
-    background-color: #191970;
-    border-radius: 10px;
+    background-color: rgba(25, 25, 112, 0.5);
+    border-radius: 1rem;
+    & a:hover {
+      color: white;
+    }
   }
   &__menu ul li {
     text-align: end;
   }
   &__menu ul li a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+    color: rgb(240, 240, 240);
+    margin: 4px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .cuerpo__cabeza__logo img {
-    width: 8.125rem;
-    transform: translate(0, -38px);
+  .cuerpo__cabeza__logo {
+    height: 5px;
+    & img {
+      width: 5rem;
+      transform: translate(0, -2rem);
+    }
   }
 }
+/*Comienzo Header gral*/

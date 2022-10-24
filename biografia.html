@@ -21,8 +21,10 @@
     <!--Comienzo header-->
     <header class="cuerpo__cabeza bg-secondary">
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand cuerpo__cabeza__logo" href="./index.html"
+        <div class="container-fluid p-0">
+          <a
+            class="navbar-brand opacity-100 cuerpo__cabeza__logo"
+            href="./index.html"
             ><img src="./img/luis-suarez-logo.png" alt="logo" width="150px"
           /></a>
           <button
@@ -41,6 +43,9 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./biografia.html"
                   >Biografia</a
@@ -65,86 +70,330 @@
     <!--Fin header-->
 
     <!--Comienzo main-->
+
     <main class="cuerpo__torso__bio">
       <section class="cuerpo__torso__bio__historia">
+        <!--resumen historia-->
         <h1>LA HISTORIA DE LUIS</h1>
         <br />
         <p>
           Nacio en Salto (Uruguay) el 24 enero de 1987 Es futbolista y juego de
           delantero. Su actual equipo es el Club Nacional de Fotball, jugando la
           primera división de Uruguay).
-          <br />
+        </p>
+        <p>
           Es además internacional con la selección absoluta de Uruguay, la
           mundialmente reconocida Celeste, es el máximo goleador histórico.
-          <br />
+        </p>
+        <p>
           En lo personal, en el año 2009, se caso en Amsterdam con Sofía Balbi,
           su compañera de toda la vida, con quién tiene 3 hijos, Delfina (2010),
           Benjamín (2013) y Lautaro (2018)
-          <br />
-          Sus comienzos como profesional fueron en el Club Nacional De Football,
-          donde consiguió 2 campeonatos uruguayos. A los 19 años comenzo su
-          etapa en el fútbol europeo, en el FC Groningen, de la Eredivisie
-          (Holanda). En el 2007, una temporada después fue fichado por el Ajax
-          de Amsterdam, donde en apenas 2 años llego a ser el capitán del
-          equipo, siendo el primer futbolista sudamericano en lograr dicho
-          privilegio. En la temporada del 2010/11 logro pasar los 100 goles
-          marcados con el Ajax, donde solo jugadores de la talla de Cruyff, Van
-          Basten y Bergkamp lo habían realizado.
-          <br />
-          En el año 2011 Tras haber despertado interés de importantes clubes de
-          Europa, finalmente fue fichado por el Liverpool F.C.. En la temporada
-          siguiente 2012/13 fue seleccionado como parte del equipo ideal de la
-          Premier League y además el segundo mejor jugador de la misma. En la
-          temporada 2013/14 fue su mejor desempeño en el Liverpool, con 31 goles
-          en 30 partidos siendo el máximo goleador y mejor jugador de la Premier
-          League. Ese año fue acreedor de su primer Bota de Oro, premio que
-          compartio con Cristiano Ronaldo.
-          <br />
-          En el año 2014 fue traspasado al FC Barcelona, donde integro plantel
-          junto con Leo Messi y Neymar el tridente , llamado MSN, considerado en
-          su momento, una de las mejores delanteras del mundo. En su primera
-          temporada en el Barça, conquistamos el triplete, Liga, Copa del Rey y
-          Champions. Esa temporada marco 25 goles, incluyendo 1 en la final de
-          Champions
-          <br />
-          En la siguiente temporada, al inicio gano la Supercopa de Europa 2015,
-          donde marco 1 gol al Sevilla FC. En diciembre de 2015 conquisto el
-          Mundial de Clubes, marcando 5 goles en 2 partidos, siendo el máximo
-          goleador y Balón de Oro de la competición
-          <br />
-          En la temporada 2015/16 consiguió su segunda Bota de Oro, logrando
-          dicho trofeo, luego de haber marcado 40 goles
-          <br />
-          A finales de septiembre de 2020 termino su etapa en el FC Barcelona,
-          yendo el Atlético de Madrid su próximo equipo donde conquisto la liga
-          en la temporada 2020/21.
-          <br />
-          Luego de una gran movida de la hinchada y voluntad personal, tricolor
-          volvió al club de sus amores en julio de 2022.
-          <br />
-          Con la Selección de Uruguay, su debut oficial fue en el 2007, en la
-          Copa Mundial Sub 20 y con la Selección Absoluta, fue el mismo año, en
-          un amistoso contra Colombia. Participo de la Copa Mundial de Fútbol
-          2010 en Sudáfrica, donde su Selección alcanzó las semifinales y
-          quedamos con el 4º puesto.
-          <br />
-          En el 2011 gano la decimoquinta Copa América, para nuestra Selección,
-          siendo este su primer título internacional con La Celeste, además fue
-          nombrado el mejor jugador del Torneo.
-          <br />
-          Desde el año 2013 se ah convertido en el máximo goleador histórico de
-          la selección de Uruguay en partidos oficiales, superando el récord que
-          ostentaba Diego Forlán.
         </p>
-      </section>
-      <section class="cuerpo__torso__bio__fotos">
-        <img class="foto1" src="./img/bio/luis-ni2.jpg" alt="SuarezNino" />
-        <img
-          class="foto2"
-          src="./img/bio/luis-suarez-familia.jpg"
-          alt="SuarezFamili"
-        />
-        <img class="foto3" src="./img/bio/mesi-suarez.jpg" alt="messi-suarez" />
+
+        <section class="cuerpo__torso__bio__fotos">
+          <!-- Se muestran unas fotos reelevantes -->
+          <img class="foto1" src="./img/bio/luis-ni2.jpg" alt="SuarezNino" />
+          <img
+            class="foto2"
+            src="./img/bio/luis-suarez-familia.jpg"
+            alt="SuarezFamili"
+          />
+          <img
+            class="foto3"
+            src="./img/bio/mesi-suarez.jpg"
+            alt="messi-suarez"
+          />
+        </section>
+        <!-- Con un acordeon de boostrap se resume la trayectoria incluyendole una imagen png a cada titulo -->
+        <h2>TRAYECTORIA</h2>
+        <div class="accordion w-100" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="undefined"
+                aria-controls="collapseOne"
+              >
+                <img
+                  src="./img/escudos/Escudo_actual_bolso.png"
+                  width="20rem"
+                  alt="escudo-nacional"
+                />
+                Debut en primera
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body text-center">
+                <strong
+                  >Sus comienzos como profesional fueron en el Club Nacional De
+                  Football, donde consiguió 2 campeonatos uruguayos.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <img
+                  src="./img/escudos/fc-groningen-logo.png"
+                  width="25rem"
+                  alt="escudo-groningen"
+                />
+                Emigra de Uruguay
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >A los 19 años comenzo su etapa en el fútbol europeo, en el FC
+                  Groningen, de la Eredivisie (Holanda).</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <img src="./img/escudos/ajax-logo.png" width="20rem" alt="escudo-ajax" /> A
+                un grande de Holanda
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >En el 2007, una temporada después fue fichado por el Ajax de
+                  Amsterdam, donde en apenas 2 años llego a ser el capitán del
+                  equipo, siendo el primer futbolista sudamericano en lograr
+                  dicho privilegio. En la temporada del 2010/11 logro pasar los
+                  100 goles marcados con el Ajax, donde solo jugadores de la
+                  talla de Cruyff, Van Basten y Bergkamp lo habían
+                  realizado.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse4"
+                aria-expanded="false"
+                aria-controls="collapse4"
+              >
+                <img
+                  src="./img/escudos/liverpool-fc-logo.png"
+                  width="20rem"
+                  alt="escudo-liverpool"
+                />
+                Se muda a Inglaterra
+              </button>
+            </h2>
+            <div
+              id="collapse4"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading4"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >En el año 2011 Tras haber despertado interés de importantes
+                  clubes de Europa, finalmente fue fichado por el Liverpool
+                  F.C.. En la temporada siguiente 2012/13 fue seleccionado como
+                  parte del equipo ideal de la Premier League y además el
+                  segundo mejor jugador de la misma. En la temporada 2013/14 fue
+                  su mejor desempeño en el Liverpool, con 31 goles en 30
+                  partidos siendo el máximo goleador y mejor jugador de la
+                  Premier League. Ese año fue acreedor de su primer Bota de Oro,
+                  premio que compartio con Cristiano Ronaldo.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse5"
+                aria-expanded="false"
+                aria-controls="collapse5"
+              >
+                <img
+                  src="./img/escudos/fc-barcelona-logo.png"
+                  width="20rem"
+                  alt="escudo-barcelona"
+                />En busca de mas Gloria
+              </button>
+            </h2>
+            <div
+              id="collapse5"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading5"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >En el año 2014 fue traspasado al FC Barcelona, donde integro
+                  plantel junto con Leo Messi y Neymar el tridente , llamado
+                  MSN, considerado en su momento, una de las mejores delanteras
+                  del mundo. En su primera temporada en el Barça, conquistamos
+                  el triplete, Liga, Copa del Rey y Champions. Esa temporada
+                  marco 25 goles, incluyendo 1 en la final de Champions En la
+                  siguiente temporada, al inicio gano la Supercopa de Europa
+                  2015, donde marco 1 gol al Sevilla FC. En diciembre de 2015
+                  conquisto el Mundial de Clubes, marcando 5 goles en 2
+                  partidos, siendo el máximo goleador y Balón de Oro de la
+                  competición En la temporada 2015/16 consiguió su segunda Bota
+                  de Oro, logrando dicho trofeo, luego de haber marcado 40
+                  goles.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse6"
+                aria-expanded="false"
+                aria-controls="collapse6"
+              >
+                <img
+                  src="./img/escudos/Atletico_Madrid_2017_logo.svg"
+                  width="20rem"
+                  alt="escudo-atm"
+                />
+                Se muda de barrio
+              </button>
+            </h2>
+            <div
+              id="collapse6"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading6"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >A finales de septiembre de 2020 termino su etapa en el FC
+                  Barcelona, yendo el Atlético de Madrid su próximo equipo donde
+                  conquisto la liga en la temporada 2020/21.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading7">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse7"
+                aria-expanded="false"
+                aria-controls="collapse7"
+              >
+                <img
+                  src="./img/escudos/Escudo_actual_bolso.png"
+                  width="20rem"
+                  alt="escudo-Nacional"
+                />
+                El retorno mas deceado
+              </button>
+            </h2>
+            <div
+              id="collapse7"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading7"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >Luego de una gran movida de la hinchada y voluntad personal,
+                  tricolor volvió al club de sus amores en julio de
+                  2022.</strong
+                >
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse8"
+                aria-expanded="false"
+                aria-controls="collapse8"
+              >
+                <img
+                  src="./img/escudos/uruguay-national-football-team-logo-1675372.png"
+                  width="20rem"
+                  alt="escudo-auf"
+                />
+                Defendiendo su país
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="heading8"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong
+                  >Con la Selección de Uruguay, su debut oficial fue en el 2007,
+                  en la Copa Mundial Sub 20 y con la Selección Absoluta, fue el
+                  mismo año, en un amistoso contra Colombia. Participo de la
+                  Copa Mundial de Fútbol 2010 en Sudáfrica, donde su Selección
+                  alcanzó las semifinales y quedamos con el 4º puesto. En el
+                  2011 gano la decimoquinta Copa América, para nuestra
+                  Selección, siendo este su primer título internacional con La
+                  Celeste, además fue nombrado el mejor jugador del Torneo.
+                  Desde el año 2013 se ah convertido en el máximo goleador
+                  histórico de la selección de Uruguay en partidos oficiales,
+                  superando el récord que ostentaba Diego Forlán.
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!--Fin main-->
