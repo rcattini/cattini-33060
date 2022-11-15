@@ -1,8 +1,3 @@
-.sombra, .cuerpo__torso__index__minibio {
-  box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73);
-  -webkit-box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73);
-  -moz-box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73); }
-
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8487,12 +8482,28 @@ textarea.form-control-lg {
 
 .botones {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  cursor: pointer; }
 
 .audio {
   display: flex;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
   padding: 2rem; }
+
+.minimarch img {
+  width: 100%; }
+
+.venta {
+  transition: all 2s; }
+
+.venta:hover {
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(153, 10, 10, 0.73);
+  font-size: 2rem; }
 
 /* Fin main principal*/
 /* Comienzo LG main principal*/
@@ -8532,7 +8543,12 @@ textarea.form-control-lg {
     margin: 20px 0px 20px 0px; }
   .cuerpo__torso__index__minigaleri__carrusel {
     margin: 100px 200px 10px 200px;
-    padding: 10px 100px 10px 100px; } }
+    padding: 10px 100px 10px 100px; }
+  .minimarch {
+    margin: 50px 200px 10px 200px;
+    padding: 10px 10px 10px 10px;
+    background: local;
+    border-radius: 1rem; } }
 
 /* Fin main LG principal*/
 /* Inicio cuerpo biografia*/
@@ -8647,6 +8663,13 @@ main h1, main .h1 {
   display: flex;
   justify-content: center; }
 
+.watsap {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1;
+  width: 4rem; }
+
 /* Fin main principal*/
 @media only screen and (min-width: 768px) {
   .padding-1 {
@@ -8696,7 +8719,7 @@ main h1, main .h1 {
 /*Final Footer gral*/
 /*Comienzo Header gral*/
 .cuerpo__cabeza {
-  z-index: 1;
+  z-index: 10;
   background: #8d0000;
   background: radial-gradient(circle, rgba(141, 0, 0, 0) 33%, #8d0000 61%);
   border-radius: 0 0 0 1rem;
@@ -8718,6 +8741,11 @@ main h1, main .h1 {
   .cuerpo__cabeza__menu ul li a {
     color: #f0f0f0;
     margin: 4px; }
+
+.sombra, .cuerpo__torso__index__minibio {
+  box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73);
+  -webkit-box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73);
+  -moz-box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73); }
 
 @media only screen and (min-width: 768px) {
   .cuerpo__cabeza__logo {

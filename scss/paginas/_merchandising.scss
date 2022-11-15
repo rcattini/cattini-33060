@@ -8,4 +8,12 @@ main h1 {
   display: flex;
   justify-content: center;
 }
+.watsap {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1;
+  width: 4rem;
+}
+
 /* Fin main principal*/

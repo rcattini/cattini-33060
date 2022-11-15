@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 @font-face {
   font-family: "kyiv";
   src: url("../font/KyivTypeSans-Regular.ttf");
@@ -116,12 +115,30 @@
 .botones {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .audio {
   display: flex;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
   padding: 2rem;
 }
+.minimarch img {
+  width: 100%;}
+.venta {
+    transition: all 2s;
+  }
+.venta:hover {
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(153, 10, 10, 0.73);
+    font-size: 2rem;
+  }
+
+
 /* Fin main principal*/
 
 /* Comienzo LG main principal*/
@@ -176,5 +193,13 @@
     margin: 100px 200px 10px 200px;
     padding: 10px 100px 10px 100px;
   }
+
+  .minimarch {
+    margin: 50px 200px 10px 200px;
+    padding: 10px 10px 10px 10px;
+    background: local;
+    border-radius: 1rem;
+  }
 }
+
 /* Fin main LG principal*/

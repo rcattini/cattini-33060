@@ -1,7 +1,7 @@
 /*Comienzo Header gral*/
 
 .cuerpo__cabeza {
-  z-index: 1;
+  z-index: 10;
   background: rgb(141, 0, 0);
   background: radial-gradient(
     circle,
@@ -34,6 +34,11 @@
     color: rgb(240, 240, 240);
     margin: 4px;
   }
+}
+.sombra {
+  box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73);
+  -webkit-box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73);
+  -moz-box-shadow: -23px 15px 13px 6px rgba(153, 10, 10, 0.73);
 }
 
 @media only screen and (min-width: 768px) {
